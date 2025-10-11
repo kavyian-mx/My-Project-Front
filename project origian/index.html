@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زینو سازه</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar fixed-top" style="background: #f2f5fc;">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <canvas id="xino-logo" width="80" height="80"></canvas>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          <canvas id="xino-logo-offcanvas" width="80" height="80"></canvas>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-2">
+            <a class="nav-link text-dark" href="#">
+              <i class="fa-solid fa-house fs-5"></i>
+              <span class="ms-2"> درباره ما</span>
+            </a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link text-dark" href="#">
+              <i class="bi bi-camera-fill fs-5"></i>
+              <span class="ms-2"> نمونه پروژه ها </span>
+            </a>
+          </li>
+                    <li class="nav-item px-2">
+            <a class="nav-link text-dark" href="#">
+              <i class="bi bi-hammer fs-5"></i>
+              <span class="ms-2">   خدمات ما  </span>
+            </a>
+          </li>
+            <li class="nav-item px-2">
+            <a class="nav-link text-dark" href="#">
+              <i class="bi bi-chat-dots fs-5"></i>
+              <span class="ms-2">  نظرات کاربران </span>
+            </a>
+          </li>
+          <li class="nav-item px-2">
+            <hr class="my-4">
+            <p class="lalezar">مارا در شبکه‌های اجتماعی دنبال کنید</p>
+            <div class="row fs-1 w-75">
+              <div class="col"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="col"><i class="fa-brands fa-telegram"></i></div>
+              <div class="col"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+  <!-- Canvas Container -->
+  <div id="scene-container" class="container-fluid"></div>
+
+  <!-- About Section -->
+  <section class="content-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5">
+          <h3 class="lalezar fs-3">     زینو قدرت و آرامش را با ما تجربه کنید </h3>
+          <p class="my-5">
+            زینو سازه با بیش از 10 سال تجربه در زمینه طراحی و اجرای غرفه‌های نمایشگاهی، به شما کمک می‌کند تا در هر نمایشگاه، حضوری متمایز و حرفه‌ای داشته باشید. تیم ما با استفاده از جدیدترین تکنولوژی‌ها و متدهای طراحی، غرفه‌هایی خلاقانه و جذاب برای شما ایجاد می‌کند که توجه بازدیدکنندگان را جلب کند.
+          </p>
+          <button class="btn btn-outline-primary px-4 my-3 rounded-pill"> خدمات</button>
+          <button class="btn btn-outline-primary px-4 rounded-pill"> نمایش پروژه ها</button>
+        </div>
+        <div class="col-md-6 offset-md-1">
+          <img src="images/header/hraderpic.png" alt="تصویر معرفی دوره‌های آموزشی زینو سازه" class="img-fluid rounded">
+        </div>
+      </div>
+
+          <!-- =====   comment section ===== -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-3 lalezar" data-aos="fade-up">نظرات مشتریان </h2>
+            <p class="section-subtitle  text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                  نظرات شما همیشه پشتوانه ماست   
+            </p>
+
+            <div class="row align-items-center">
+                <!-- تصویر -->
+                <div class="col-md-5 mb-4 mb-md-0" data-aos="fade-left" data-aos-delay="200">
+                    <img src="images/Comment/Comment.png" alt="testimonial" class="img-fluid testimonial-image">
+                </div>
+
+                <!-- اسلایدر -->
+                <div class="col-md-7" data-aos="fade-right" data-aos-delay="300">
+                    <div id="testimonial-slider" class="testimonial-slider">
+                        <!-- آیتم‌ها توسط JS ساخته می‌شوند -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Services Section Title -->
+      <h2 class="lalezar fs-2 text-center mt-5">خدمات تیم زینو سازه</h2>
+      <p class="text-center mb-4">خوشحالیم که بگوییم خدمات زیر توسط تیم زینو سازه ارائه می‌شود</p>
+      <!-- Cards Section -->
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <div class="card">
+            <img src="images/cards/design.png"  class="card-img-top img-thumbnail">
+            <div class="card-body">
+              <h2 class="lalezar text-center mt-2">طراحی و  مشاوره </h2>
+              <p class="lalezar">ارائه خدمات مشاوره و طراحی غرفه های نمایشگاهی با استفاده از جدیدترین متدد ها</p>
+              <ul>
+                <li>  اجرای سازه </li>
+                <li> نور پردازی تخصصی</li>
+                <li> دکوراسیون داخلی </li>
+                <li>نصب تجهییزات </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <div class="card">
+            <img src="images/Cards/Building.png"  class="card-img-top img-thumbnail">
+            <div class="card-body">
+              <h2 class="lalezar text-center mt-2"> ساخت و اجرا </h2>
+              <p class="lalezar">اجرای حرفه ای غرفه های نمایشگاهی با بالاتریت استاندارد های جهانی </p>
+              <ul>
+                <li>  اجرای سازه </li>
+                <li> نور پردازی های تخصصی  </li>
+                <li> نصب تجهییزات  </li>
+                <li>دکوراسیون داخلی </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+          <div class="card">
+            <img src="images/Cards/support.png" alt="تصویر خدمات UI/UX" class="card-img-top">
+            <div class="card-body">
+              <h2 class="lalezar text-center mt-2">  پشتیبانی و نگه داری   </h2>
+              <p class="lalezar">ارائه خدمات پشتیبانی و نگه داری در طول نمایشگاه و پس از آن</p>
+              <ul>
+                <li>  پشتیبانی 24 ساعته</li>
+                <li> تعمییر و نگه داری </li>
+                <li>  خدمات اضطراری</li>
+                <li>مستند سازی </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="card">
+            <img src="images/Cards/SpecialServices.png"  class="card-img-top img-thumbnail">
+            <div class="card-body">
+            <h2 class="lalezar text-center mt-2">   خدمات ویژه  </h2>
+            <p class="lalezar">ارائه خدمات ویژه و سفارشی متناسب با نیاز های خاص مشتری</p>
+              <ul>
+                <li> طراحی خاص </li>
+                <li>متریال سفارشب  </li>
+                <li>اجرای فوری </li>
+                <li>خدمات VIP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+          <div class="card">
+            <img src="images/Cards/tool.png" class="card-img-top">
+            <div class="card-body">
+              <h2 class="lalezar text-center mt-2">  تجهیزات نمایشگاهی   </h2>
+              <p class="lalezar">تامین و نصب انواع تجهیزات نمایشگاهی مدرن و با کیفیت </p>
+              <ul>
+                <li> سیستم صوتی </li>
+                <li> نمایشگر های LED</li>
+                <li> سیستم نور پردازی</li>
+                <li> مبلمان نمایشگاهی</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+          <div class="card">
+            <img src="images/Cards/Consulting.png"  class="card-img-top">
+            <div class="card-body">
+              <h2 class="lalezar text-center mt-2">  طراحی دیجیتال  </h2>
+              <p class="lalezar"> ارائه خدمات طراحی دیجیتال و شبیه ساز سه بعدی قبل از اجرا غرفه </p>
+              <ul>
+                <li> رندرنیگ حرفه ای </li>
+                <li> واقعیت مجازی</li>
+                <li> انمیشن سه بعدی </li>
+                <li>   شبه سازی تور </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="icons-section" class="container my-5">
+  <!-- عنوان و توضیح -->
+  <div class="text-center mb-4">
+    <h2 class="fw-bold lalezar">  بخش کوچکی از پروژه های xino</h2>
+    <p class="text-muted">((یرای دیدن پروژه ها روی ایکون مورد نظر کلیک کنید ))   </p>
+  </div>
+
+  <div class="row align-items-center">
+    <!-- آیکون‌ها -->
+    <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+      <div id="icons-container" class="position-relative" style="height:300px;">
+        <div class="floating-icon" data-image="./images/icon/icon1.png"><i class="bi bi-camera-fill"></i></div>
+        <div class="floating-icon" data-image="./images/icon/icon2.png"><i class="bi bi-camera-fill"></i></div>
+        <div class="floating-icon" data-image="./images/icon/icon3.png"><i class="bi bi-camera-fill"></i></div>
+        <div class="floating-icon" data-image="./images/icon/icon4.png"><i class="bi bi-camera-fill"></i></div>
+        <div class="floating-icon" data-image="./images/icon/icon5.png"><i class="bi bi-camera-fill"></i></div>
+        <div class="floating-icon" data-image="./images/icon/icon6.png"><i class="bi bi-camera-fill"></i></div>
+        <div class="floating-icon" data-image="./images/icon/icon7.png"><i class="bi bi-camera-fill"></i></div>
+        <div class="floating-icon" data-image="./images/icon/icon8.png"><i class="bi bi-camera-fill"></i></div>
+        <div class="floating-icon" data-image="./images/icon/icon9.png"><i class="bi bi-camera-fill"></i></div>
+        <div class="floating-icon" data-image="./images/icon/icon10.png"><i class="bi bi-camera-fill"></i></div>
+      </div>
+    </div>
+
+    <!-- بخش عکس -->
+    <div class="col-lg-6 text-center">
+      <div class="p-3">
+        <img id="icon-display-image" src="images/Test/for.png"  class="img-fluid shadow rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Bootstrap Modal for Image Display -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img id="modalImage" src="" class="img-fluid" alt="تصویر انتخاب‌شده">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.139.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.139.2/examples/js/controls/DragControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.139.2/examples/js/loaders/FontLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.139.2/examples/js/geometries/TextGeometry.js"></script>
+  <script src="js/ThreeDStyle.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init({
+      once: true, 
+      duration: 800,
+      easing: 'ease-out',
+      anchorPlacement: 'top-bottom' 
+    });
+  </script>
+  <script src="js/testimonial-slider.js"></script>
+  <script src="js/xinoLogo3D.js"></script>
+  <script>
+window.addEventListener("DOMContentLoaded", () => {
+
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+<script src="js/ForExample.js"></script>
+
+
+</body>
+</html>

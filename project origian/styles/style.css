@@ -1,0 +1,277 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/Vazir.ttf");
+}
+.lalezar {
+    font-family: "Lalezar", sans-serif;
+}
+body {
+    background: #f2f5fc;
+    font-family: "vazir", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    background: #ffffff;
+}
+
+#scene-container {
+    margin-top: 56px;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+canvas.grabbing {
+    cursor: grabbing;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    max-width: 100%;
+}
+
+.content-section {
+    margin-top: 0;
+    background: #f8f9fa;
+}
+
+/* Card styles */
+.card {
+    position: relative;
+    min-height: 400px; /* برای جا شدن محتوا */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* زوم جذاب */
+    box-shadow: 0 8px 16px rgba(0, 191, 255, 0.5);
+}
+
+/* حاشیه آبی متحرک */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    background: linear-gradient(
+            90deg,
+            rgba(0, 191, 255, 0.8) 0%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 191, 255, 0.8) 100%
+        )
+        border-box;
+    background-size: 400%;
+    animation: borderGlow 4s linear infinite;
+    z-index: -1;
+}
+
+@keyframes borderGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 200% 50%;
+    }
+    75% {
+        background-position: 300% 50%;
+    }
+    100% {
+        background-position: 400% 50%;
+    }
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.card-body h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.card-body ul li {
+    margin-bottom: 0.4rem;
+}
+
+@media screen and (max-width: 576px) {
+    #scene-container {
+        margin-top: 46px;
+        height: 50vh; /* کاهش برای موبایل */
+    }
+
+    .content-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .card {
+        min-height: 350px; /* فضای کافی برای لیست */
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-body {
+        padding: 0.8rem;
+    }
+
+    .card-body h4 {
+        font-size: 1rem;
+    }
+
+    .card-body ul {
+        font-size: 0.8rem;
+    }
+
+    .card-body ul li {
+        margin-bottom: 0.3rem;
+    }
+
+    /* AOS برای موبایل */
+    [data-aos] {
+        transition-duration: 500ms !important; /* سریع‌تر */
+        transition-delay: 50ms !important; /* delay کمتر */
+    }
+}
+
+/* --- Testimonials Section --- */
+.testimonials {
+    background-color: #f9f9f9;
+}
+
+.testimonial-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 150px;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-4px);
+}
+
+.testimonial-name {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+    .testimonial-slider {
+        flex-direction: column;
+    }
+    .testimonial-image {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.testimonial-stars {
+    color: gold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Box shadow جدید */
+    transition: all 0.3s ease;
+}
+
+/* xino 3D logo container */
+.xino-logo {
+    display: inline-block;
+    width: 64px; /* default, قابل override با data-size */
+    height: 64px; /* default */
+    vertical-align: middle;
+    position: relative;
+    /* اگر خواستی padding یا margin خاص اضافه کن */
+}
+
+#icons-container {
+    overflow: hidden;
+}
+
+.floating-icon {
+    position: absolute;
+    font-size: 2.5rem;
+    color: #003f5c; /* آبی نفتی پیش‌فرض */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.floating-icon:hover {
+    transform: scale(1.3);
+}
+
+.floating-icon.active {
+    color: red; /* رنگ وقتی انتخاب شده */
+}
+
+#icon-display-image {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .floating-icon {
+        font-size: 1.8rem;
+    }
+    #icons-container {
+        height: 200px;
+    }
+}
