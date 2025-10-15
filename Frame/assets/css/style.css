@@ -1,0 +1,73 @@
+*{
+margin: 0px;
+padding: 0px;
+
+
+}
+
+body{
+
+    font-family: 'Open Sans';
+}
+
+.header{
+
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../Img/image_1.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: beige;
+text-align: center;
+ 
+}
+
+.header-box{
+
+
+width: 85%;
+margin: auto;
+padding: 200Px 0;
+
+}
+.header-box p{
+
+    font-size: 50px;
+    font-weight: 300;
+
+}
+
+.div-butten1{
+
+    background:rgb(20, 31, 180);
+    color: bisque;
+    padding: 12px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.div-butten{
+
+margin-top: 50px;
+}
+
+.div-butten2{
+
+    color: bisque;
+    padding: 10px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    border:2px solid wheat;
+    border-radius: 10px;
+    margin: 15px;
+
+}
+.div-butten1:hover{
+    background: rgb(0, 17, 255);
+
+
+}
+.div-butten2:hover{
+        background: rgb(255, 255, 255);
+        color: rgb(28, 28, 29);
+
+
+}
