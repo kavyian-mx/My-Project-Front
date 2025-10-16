@@ -52,7 +52,8 @@ body {
 }
 
 .div-butten1:hover {
-    background: rgb(0, 17, 255);
+    background: rgb(2, 8, 88);
+    color: black;
 }
 
 .div-butten2:hover {
@@ -61,19 +62,17 @@ body {
 }
 
 .services {
-
     padding: 100px 0;
 }
+
 .services-box {
-    
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    
-} 
+}
+
 .service-content {
-    
     width: 33%;
 }
 
@@ -81,24 +80,114 @@ body {
     font-size: 65px;
     color: rgb(132, 148, 228);
 }
+
 .service-content h3 {
     color: rgb(132, 148, 228);
-    
 
     font-size: 28px;
     padding: 30px 0;
 }
+
 .service-content p {
     color: rgb(175, 177, 187);
     margin-bottom: 25px;
     width: 85%;
-    line-height:1.3;
+    line-height: 1.3;
 }
+
 .service-content a {
     color: rgb(132, 148, 228);
     text-decoration: none;
 }
-.icon-a{
-    font-size: 10px;
 
+.icon-a {
+    font-size: 10px;
+}
+.feature {
+  background-color: #c9f3f3;
+  padding: 150px 0;
+}
+
+.featuer-box {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.sec-top {
+  text-align: center;
+}
+
+.sec-top h1 {
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.sec-top .line {
+  display: inline-block;
+  width: 200px;
+  height: 3px;
+  background-color: rgb(5, 48, 187);
+  margin: 15px 0 20px;
+}
+
+.sec-top p {
+  color: rgb(167, 167, 167);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+.feature-iteam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+
+.feature-iteam.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-iteam-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-iteam-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.featurer-list-iteam {
+  width: 50%;
+}
+
+.featurer-list-iteam h3 {
+  font-size: 34px;
+  margin-bottom: 25px;
+  color: rgb(37, 37, 243);
+  font-weight: bolder;
+}
+
+.featurer-list-iteam p {
+  line-height: 1.6;
+  color: rgb(100, 100, 228);
+  margin-bottom: 15px;
+}
+
+.featurer-list-iteam p:first-of-type {
+  margin-bottom: 25px;
+  color: rgb(80, 80, 200);
+}
+
+.featurer-list-iteam p i {
+  margin-right: 10px;
+  color: rgb(2, 0, 100);
 }
