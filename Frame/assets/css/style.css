@@ -104,90 +104,156 @@ body {
     font-size: 10px;
 }
 .feature {
-  background-color: #c9f3f3;
-  padding: 150px 0;
+    background-color: #c9f3f3;
+    padding: 150px 0;
 }
 
 .featuer-box {
-  width: 75%;
-  margin: 0 auto;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .sec-top {
-  text-align: center;
+    text-align: center;
 }
 
 .sec-top h1 {
-  font-weight: bold;
-  font-size: 60px;
-  margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
 .sec-top .line {
-  display: inline-block;
-  width: 200px;
-  height: 3px;
-  background-color: rgb(5, 48, 187);
-  margin: 15px 0 20px;
+    display: inline-block;
+    width: 200px;
+    height: 3px;
+    background-color: rgb(5, 48, 187);
+    margin: 15px 0 20px;
 }
 
 .sec-top p {
-  color: rgb(167, 167, 167);
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-  padding: 0 20px;
+    color: rgb(167, 167, 167);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 0 20px;
 }
 
 .feature-iteam {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
 }
 
-
 .feature-iteam.reverse {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .feature-iteam-img {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .feature-iteam-img img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
 }
 
 .featurer-list-iteam {
-  width: 50%;
+    width: 50%;
 }
 
 .featurer-list-iteam h3 {
-  font-size: 34px;
-  margin-bottom: 25px;
-  color: rgb(37, 37, 243);
-  font-weight: bolder;
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: rgb(37, 37, 243);
+    font-weight: bolder;
 }
 
 .featurer-list-iteam p {
-  line-height: 1.6;
-  color: rgb(100, 100, 228);
-  margin-bottom: 15px;
+    line-height: 1.6;
+    color: rgb(100, 100, 228);
+    margin-bottom: 15px;
 }
 
 .featurer-list-iteam p:first-of-type {
-  margin-bottom: 25px;
-  color: rgb(80, 80, 200);
+    margin-bottom: 25px;
+    color: rgb(80, 80, 200);
 }
 
 .featurer-list-iteam p i {
-  margin-right: 10px;
-  color: rgb(2, 0, 100);
+    margin-right: 10px;
+    color: rgb(2, 0, 100);
+}
+
+.plans {
+    background: #f9fbfd;
+    padding: 100px 0;
+    font-family: sans-serif;
+}
+.price-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.plan-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    flex: 1;
+    max-width: 320px;
+    transition: transform 0.3s ease;
+}
+.plan-card:hover {
+    transform: translateY(-8px);
+}
+.plan-card h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0530bb;
+    margin: 15px 0;
+}
+.desc {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+.plan-card ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.btn {
+    background: #0530bb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #002a80;
+}
+.popular {
+    border: 2px solid #0530bb;
+    transform: scale(1.05);
 }
