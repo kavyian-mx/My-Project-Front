@@ -5,7 +5,7 @@
 
 body {
     font-family: "Open Sans";
-    height: 5000px;
+    height: 7000px;
 }
 
 .header {
@@ -342,5 +342,30 @@ body {
 
 .testimonial-card .name {
     font-weight: bold;
-    color: rgb(37, 37, 243);
+    color: #2525f3;
+}
+
+.join {
+    background-color: #1005ad;
+    color: rgb(255, 248, 248);
+    padding: 65px 0;
+    text-align: center;
+}
+
+.join-box {
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.join-box p {
+    padding: 30px 0;
+    width: 65%;
+}
+.join-box a {
+    text-decoration: none;
+    padding: 12px 38px;
+    background-color: #0f0f14;
+    color: rgb(255, 255, 255);
 }
